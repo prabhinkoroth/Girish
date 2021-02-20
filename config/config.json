@@ -1,0 +1,76 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "client-information-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/clientInformation/ClientInformationWebPart.js",
+          "manifest": "./src/webparts/clientInformation/ClientInformationWebPart.manifest.json"
+        }
+      ]
+    },
+    "joining-details-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/joiningDetails/JoiningDetailsWebPart.js",
+          "manifest": "./src/webparts/joiningDetails/JoiningDetailsWebPart.manifest.json"
+        }
+      ]
+    },
+    "payroll-input-form-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/payrollInputForm/PayrollInputFormWebPart.js",
+          "manifest": "./src/webparts/payrollInputForm/PayrollInputFormWebPart.manifest.json"
+        }
+      ]
+    },
+    "employee-details-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/employeeDetails/EmployeeDetailsWebPart.js",
+          "manifest": "./src/webparts/employeeDetails/EmployeeDetailsWebPart.manifest.json"
+        }
+      ]
+    },
+    "instruction-list-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/instructionList/InstructionListWebPart.js",
+          "manifest": "./src/webparts/instructionList/InstructionListWebPart.manifest.json"
+        }
+      ]
+    },
+    "user-registration-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/userRegistration/UserRegistrationWebPart.js",
+          "manifest": "./src/webparts/userRegistration/UserRegistrationWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "node_modules/jquery/dist/jquery.min.js",
+      "globalName": "jQuery"
+    },
+    "bootstrap": {
+      "path": "node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "globalName": "bootstrap",
+      "globalDependencies": [
+        "jquery"
+      ]
+    }
+  },
+  "localizedResources": {
+    "ClientInformationWebPartStrings": "lib/webparts/clientInformation/loc/{locale}.js",
+    "JoiningDetailsWebPartStrings": "lib/webparts/joiningDetails/loc/{locale}.js",
+    "PayrollInputFormWebPartStrings": "lib/webparts/payrollInputForm/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "EmployeeDetailsWebPartStrings": "lib/webparts/employeeDetails/loc/{locale}.js",
+    "InstructionListWebPartStrings": "lib/webparts/instructionList/loc/{locale}.js",
+    "UserRegistrationWebPartStrings": "lib/webparts/userRegistration/loc/{locale}.js"
+  }
+}

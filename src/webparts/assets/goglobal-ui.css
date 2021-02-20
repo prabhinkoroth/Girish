@@ -1,0 +1,26 @@
+.profile-imgPic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.hvr-trim {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+.info-icon i {
+    color: #1788DE;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.info-icon {
+    height: 30px;
+    width: 20px;
+    float: left;
+}
